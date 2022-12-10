@@ -48,3 +48,4 @@ Code example:
 </body>
 </html>
 ```
+English level - A2
