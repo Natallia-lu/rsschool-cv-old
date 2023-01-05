@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #000;
+    background-color: rgb(245, 248, 246);
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+    font-weight: 800;
+}
+a:hover {
+    color: rgb(30, 144, 186);
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+h4 {
+    font-size: 20px;
+}
+.home {
+    position: fixed;
+    bottom: 50px;
+    right: 300px;
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(232, 240, 234);
+}
+.container {
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+}
+.nav-items {
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+.photo {
+    position: absolute;
+    right: 0;
+    height: 450px;
+    top: 0;
+}
+.education {
+    border-bottom: 2px solid #000;
+}
+.wrap-footer {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
