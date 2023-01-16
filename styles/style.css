@@ -38,27 +38,40 @@ p {
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    background-color: #EDF2EC;
+    margin: 0 auto;
+    
+
+}
+
 .container {
 width: 1440px;
 margin: 0 auto;
+display: flex;
+justify-content: space-between;
+
 }
 
 .wrap-header {
-    background-color: #EDF2EC;
     display: flex;
+    justify-content: space-between;
     font-size: 16px;
     font-family: Inika;
     line-height: 20px;
     height: 134px;
+    width: 1220px;
+    margin-left: 111px;
 }
 
 .logo {
-    margin: 52px auto 61px 111px;
+    margin: 52px auto 61px 0;
     color: #000000
 }
 
 .nav {
-    margin: 42px 109px 42px auto;
+    margin: 42px 0 42px auto;
 }
 
 .nav-items {
@@ -74,7 +87,10 @@ margin: 0 auto;
 
 li:hover {
     font-weight: 700;
-    font-size: 20px;
+}
+
+header a:hover {
+    color: #E06733;
 }
 
 .red-text {
@@ -87,9 +103,8 @@ li:hover {
  }
 
 .welcome {
-    display: flex;
+    margin: 0 auto;
     background-color: #EDF2EC;
-    justify-content: space-between;
 }
 
 .welcome img {
@@ -118,9 +133,10 @@ li:hover {
 }
 
 .wrap-welcome button:hover {
-    background-color: #d5ebd1;
+    background-color: #E06733;
     font-weight: 700;
-    border: 3px solid #e0632d;
+    border: 2px solid #E06733;
+
 }
 
 h2 .red-text {
@@ -155,7 +171,7 @@ h2 .red-text {
    
 }
  
-.wrap-service {
+.wrap-service-menu {
     display: flex;
     margin: 0 324px 78px 109px;
     justify-content: space-between;
@@ -182,9 +198,8 @@ button {
 }
 
 button:hover {
-    border: 2px solid #e0632d;
-    font-weight: 700;
-    background-color: #d5ebd1;
+    color: #ffffff;
+    background-color: #E06733;
 }
 
 .wrap-service-items {
@@ -336,8 +351,8 @@ h3 {
 }
 
 .btn-city:hover {
-    background-color: #c9e5c3;
-    border: 2px solid #c8c8c8;
+    background-color: #C1E698;
+    color: #717171;
 }
 
 .btn-city img {
@@ -348,6 +363,7 @@ h3 {
 
 footer {
     height: 130px; 
+    background-color: #ffffff;
 }
 
 .wrap-footer {
@@ -358,7 +374,8 @@ footer {
     font-family: 'Inter';
     align-items: baseline;
     justify-content: space-between;
-    background-color: #ffffff;
+    width: 1222px;
+
 }
 
 .wrap-footer a:hover {
