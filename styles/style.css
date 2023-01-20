@@ -49,7 +49,14 @@ width: 1440px;
 margin: 0 auto;
 display: flex;
 justify-content: space-between;
+}
 
+.nav-burg {
+    display: none;
+}
+
+.popup {
+    display: none;
 }
 
 .wrap-header {
@@ -602,6 +609,273 @@ footer {
         box-sizing: border-box;
         align-items: center;
         
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 380px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+/*    .nav-burg {
+        position: fixed;
+
+        height: 100px;
+        background-color: #EDF2EC;
+    
+
+    }
+
+    .icon-burg {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .line {
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin: 8px auto;
+        background-color: #717171;
+        transition: 0.5s;
+    }
+
+    .wrap-burg {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .popup {
+        position: fixed;
+        top: 75px;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #EDF2EC;
+        z-index: 2;
+        display: flex;
+        transition: 0.5s;
+      }
+
+    .popup a {
+        text-align: right;
+    }
+
+    .popup ul {
+        flex-direction: column;
+    }
+*/
+
+
+    header {
+        height: 96px;
+    }
+
+    .logo {
+        margin: 36px auto 36px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 20.36px;
+    }
+
+    .welcome img {
+        display: none;
+    }
+
+    .wrap-welcome {
+        margin: 24px 25px;
+        height: auto;
+    }
+
+    .wrap-welcome-text {
+        width: 330px;
+        margin: 0;
+        height: auto;
+    }
+
+    .wrap-welcome-text p {
+        margin: 0;
+        width: 330px;
+    }
+
+    .btn-learn {
+        margin-top: 27px;
+        width: 100px;
+        font-size: 10px;
+        height: 34.14px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 32.57px;
+        width: auto;
+    }
+
+    .wrap-about {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .wrap-about-text {
+        width: 330px;
+        margin-top: 30px;
+    }
+
+    .wrap-about-text p {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 25px;
+        width: auto;
+    }
+
+    .wrap-about img {
+        width: 150px;
+        height: 147px;
+        margin: 0 auto 33px;
+    }
+
+    .service {
+        padding: 30px 0 0 0;
+    }
+
+    .wrap-service {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .wrap-service-menu {
+        margin: 0 auto 38px;
+        width: 330px;
+    }
+    
+    .service-buttons {
+        flex-flow: row wrap;
+        width: 252px;
+        height: 85px;
+    }
+
+    .service-buttons button {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .wrap-service-menu h2 {
+        margin-bottom: 37px;
+    }
+
+    .wrap-service-items {
+        width: auto;
+        margin: 0 auto 27px;
+        flex-direction: column;
+        align-content: center;
+        row-gap: 34px;
+    }
+
+    .service-items {
+        width: 280px;
+        margin: 0;
+    }
+
+    .service-items img {
+        height: 348px;
+    }
+
+    h3 {
+        margin: 5px auto 8px auto;
+    }
+
+    .wrap-prices {
+        flex-direction: column;
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .wrap-prices-left {
+        margin: 25px auto 19px auto;
+    }
+
+    .wrap-prices-left h2 {
+        font-size: 25px;
+        line-height: 30.26px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .prices-button {
+        margin-top: 37px;
+        width: 224px;
+        padding: 29px 22px;
+        height: 235px;
+    }
+
+    .prices-button button {
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
+        padding: 15.91px 40px 15.91px 30px;
+    }
+
+    .wrap-prices-right {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .wrap-prices-right h2 {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .wrap-prices-right button {
+        margin: 20px auto 40px auto;
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .wrap-prices-right img {
+        display: none;
+    }
+
+    .wrap-contacts {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    .wrap-contacts-text {
+        width: auto;
+    }
+
+    .wrap-contacts-text h2 {
+        font-size: 25px;
+        line-height: 32.57px;
+        margin: 25px auto 80px;
+    }
+
+    .btn-city {
+        width: 300px;
+        padding: 0 20px;
+    }
+
+    .wrap-contacts-img img {
+        width: 100px;
+        height: 124.25px;
+        margin: 132px auto 0 auto;
+    }
+
+    .wrap-footer {
+        padding: 22px 0 7px 0;
+        height: 146px;
     }
 
 }
