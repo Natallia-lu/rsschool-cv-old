@@ -426,7 +426,7 @@ footer {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1439.98px){
     .container {
         width: 668px;
     }
@@ -613,9 +613,10 @@ footer {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
+   
     .container {
-        width: 380px;
+        width: 330px;
     }
 
     .nav {
@@ -676,8 +677,12 @@ footer {
         height: 96px;
     }
 
+    .wrap-header {
+        margin-left: 0;
+    }
+
     .logo {
-        margin: 36px auto 36px 20px;
+        margin: 36px auto 36px 0;
     }
 
     h1 {
@@ -691,7 +696,7 @@ footer {
     }
 
     .wrap-welcome {
-        margin: 24px 25px;
+        margin: 24px 0;
         height: auto;
     }
 
@@ -704,6 +709,8 @@ footer {
     .wrap-welcome-text p {
         margin: 0;
         width: 330px;
+        font-size: 16px;
+        line-height: 25px;
     }
 
     .btn-learn {
@@ -722,11 +729,16 @@ footer {
     .wrap-about {
         width: 330px;
         margin: 0 auto;
+        flex-direction: column;
     }
 
     .wrap-about-text {
         width: 330px;
-        margin-top: 30px;
+        margin: 30px 0 0 0;
+    }
+
+    .wrap-about-text h2 {
+        text-align: center;
     }
 
     .wrap-about-text p {
@@ -738,8 +750,8 @@ footer {
 
     .wrap-about img {
         width: 150px;
-        height: 147px;
-        margin: 0 auto 33px;
+        height: 150px;
+        margin: 0 auto 30px;
     }
 
     .service {
@@ -754,6 +766,7 @@ footer {
     .wrap-service-menu {
         margin: 0 auto 38px;
         width: 330px;
+        flex-direction: column;
     }
     
     .service-buttons {
@@ -787,6 +800,11 @@ footer {
 
     .service-items img {
         height: 348px;
+        width: 279px;
+    }
+
+    .service-items p {
+        margin: 0 10px;
     }
 
     h3 {
@@ -850,6 +868,7 @@ footer {
     .wrap-contacts {
         width: 330px;
         margin: 0 auto;
+        flex-direction: column-reverse;
     }
 
     .wrap-contacts-text {
@@ -865,17 +884,71 @@ footer {
     .btn-city {
         width: 300px;
         padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .wrap-contacts-img {
+        display: flex;
+        
     }
 
     .wrap-contacts-img img {
         width: 100px;
         height: 124.25px;
-        margin: 132px auto 0 auto;
+        margin: 132px auto 0;
+    }
+
+    footer {
+        height: 146px;
     }
 
     .wrap-footer {
         padding: 22px 0 7px 0;
         height: 146px;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
     }
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 379.98px) {
+
+    .container {
+        width: 320px;
+    }
+
+    h1 {
+        text-align: center;
+        width: 320px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .wrap-welcome-text {
+        width: 320px;
+    }
+
+    .wrap-welcome-text p {
+        width: 320px;
+        text-align: center;
+    }
+
+    .wrap-about-text p {
+        width: 320px;
+        text-align: center;
+    }
+
+    .wrap-service-menu{
+        width: 320px;
+    }
+
+    .wrap-service-items {
+        width: 320px;
+        box-sizing: border-box;
+        margin: 0 auto 27px;
+    }
+
+} 
