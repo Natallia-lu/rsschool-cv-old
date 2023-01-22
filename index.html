@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap">
+    
 </head>
 <body>
     <header class="header" id="header">
@@ -19,7 +20,7 @@
                     <img alt="Logo" title="Plants" src="assets/img/logo_vector.svg">
                     <span>Plants</span>
                 </div>
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <ul class="nav-items">
                         <li>
                             <a href="#welcome">Home</a>
@@ -38,38 +39,16 @@
                         </li>
                     </ul>
                 </nav>
-                <nav class="nav-burg">
-                    <div class="wrap-burg">
-                        <div class="icon-burg">
+                <div class="wrap-burg">
+                        <div class="icon-burg" id="icon-burg">
                             <span class="line"></span>
                             <span class="line"></span>
                             <span class="line"></span>
                             <span class="line"></span>
                         </div>
-                        <div class="popup" id="popup">
-                            <nav class="nav">
-                                <ul class="nav-items">
-                                    <li>
-                                        <a href="#welcome">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#about">About us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#service">Service</a>
-                                    </li>
-                                    <li>
-                                        <a href="#prices">Price</a>
-                                    </li>
-                                    <li>
-                                        <a href="#contacts">Contacts</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </nav>
-                
+                </div>
+                <div class="popup" id="popup">
+                </div>        
             </div>
         </div>
     </header>
@@ -81,7 +60,7 @@
                     <div class="wrap-welcome-text">
                         <h1>We grow <span class="green-text">plants</span> and give you oxygen</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's&nbsp;standard dummy text ever since the 1500s.</p>
-                        <button class="btn-learn">LEARN MORE</button>
+                        <button class="btn-learn"><a href="#about">LEARN MORE</a></button>
                     </div>
                 </div>
             </div>
@@ -157,7 +136,7 @@
                     </div>
                     <div class="wrap-prices-right">
                         <h2>Our best <span class="green-text">gardeners</span> are <br>ready to help you</h2>
-                        <button>Contact us</button>
+                        <button><a href="#contacts">Contact us</a></button>
                         <img alt="Leafs" title="Leafs" src="assets/img/leafs-small.png">
                     </div>
                 </div>
@@ -196,5 +175,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

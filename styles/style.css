@@ -615,6 +615,8 @@ footer {
 
 @media screen and (max-width: 767.98px) {
    
+    
+    
     .container {
         width: 330px;
     }
@@ -623,55 +625,102 @@ footer {
         display: none;
     }
 
-/*    .nav-burg {
-        position: fixed;
+    /* burger-menu*/
 
-        height: 100px;
-        background-color: #EDF2EC;
-    
-
-    }
-
-    .icon-burg {
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-    .line {
-        display: block;
-        width: 40px;
-        height: 2px;
-        margin: 8px auto;
-        background-color: #717171;
-        transition: 0.5s;
-    }
-
-    .wrap-burg {
+    .wrap-header {
         display: flex;
         justify-content: space-between;
     }
 
+   .wrap-burg {
+       margin-top: 28px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon-burg {
+        height: 36px;
+    }
+
+    .line {
+        display: block;
+        height: 2px;
+        width: 40px;
+        margin: 6px auto;
+        background-color: #717171;
+        transition: 0.5s;
+    }
+
     .popup {
         position: fixed;
-        top: 75px;
+        display: flex;
+        top: 96px;
         right: -100%;
         width: 100%;
         height: 100%;
         background-color: #EDF2EC;
-        z-index: 2;
-        display: flex;
+        z-index: 5;
         transition: 0.5s;
+        border-top: 2px #E06733 solid;
+    }
+
+    .popup.open {
+        right: 0;
+
+    }
+
+    .icon-burg.active .line:nth-of-type(3), 
+    .icon-burg.active .line:nth-of-type(4) {
+        display: none;
+    }
+
+    .icon-burg.active .line:nth-of-type(1) {
+        transform: translateY(4px) rotate(35deg);
+    } 
+
+    .icon-burg.active .line:nth-of-type(2) {
+    transform: translateY(-4px) rotate(-35deg);
+    }
+
+    body.noscroll {
+        overflow: hidden;
       }
 
-    .popup a {
-        text-align: right;
+    .nav.burger {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;    
     }
 
-    .popup ul {
+    .nav.burger .nav-items {
+        display: block;
         flex-direction: column;
-    }
-*/
 
+        width: 100%;
+    }
+
+    .nav.burger li {
+        font-size: 25px;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .nav.burger a {
+        color: #717171;
+        font-family: 'Inter';
+        width: 100%;
+        display: flex;
+        padding: 30px;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+
+    .nav.burger a:hover {
+        color: #E06733;
+    }
+    
+/*humburg-menu*/
 
     header {
         height: 96px;
@@ -912,7 +961,7 @@ footer {
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 379.98px) {
+@media screen and (max-width: 379.98px) {
 
     .container {
         width: 320px;
@@ -952,3 +1001,4 @@ footer {
     }
 
 } 
+
