@@ -148,6 +148,11 @@ header a:hover {
     background-color: #E06733;
     font-weight: 700;
     border: 2px solid #E06733;
+    color: #ffffff;
+}
+
+.btn-learn a:hover {
+    color: #ffffff;
 }
 
 h2 .red-text {
@@ -224,7 +229,6 @@ button:hover {
     flex-flow: row wrap;
     margin: 0 109px;
     justify-content: space-between;
- /*   height: 955px;*/
     align-content: space-between;
 }
 
@@ -331,6 +335,14 @@ h3 {
     box-sizing: border-box;
 }
 
+.wrap-prices-right a:hover {
+    color: #ffffff;
+}
+
+.wrap-prices-right a {
+    color: #E06733;
+}
+
 .wrap-prices-right img {
     width: 152px;
     height: 175px;
@@ -354,14 +366,14 @@ h3 {
 }
 
 .wrap-contacts img {
-    margin-top: 53px;
+    margin-top: 48px;
     width: 400px;
     height: 497px;
 }
 
 .wrap-contacts h2 {
     font-weight: 700;
-    margin: 60px 64px auto 113px;
+    margin: 60px 64px 0 113px;
 }
 
 .btn-city {
@@ -374,10 +386,10 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 33px 0 23px;
+    padding: 0 35px 0 23px;
     color: #717171;
     font-family: 'Inter';
-    margin: 37px 0 352px 372px;
+    margin: 35px 10px auto auto;
 }
 
 .btn-city:hover {
@@ -444,7 +456,6 @@ footer {
     .welcome img {
         width: 280px;
         height: 265px;
-
     }
 
     .wrap-welcome-text {
@@ -492,7 +503,6 @@ footer {
         line-height: 45.61px;
         text-align: center;
         width: 423px;
-
     }
 
     .wrap-about p {
@@ -523,7 +533,6 @@ footer {
     .service-items {
         width: 281px;
         margin-bottom: 38px;
-
     }
 
     .service-items img {
@@ -608,15 +617,11 @@ footer {
         padding: 33px 0 18px 0;
         box-sizing: border-box;
         align-items: center;
-        
     }
-
 }
 
 @media screen and (max-width: 767.98px) {
    
-    
-    
     .container {
         width: 330px;
     }
@@ -666,7 +671,6 @@ footer {
 
     .popup.open {
         right: 0;
-
     }
 
     .icon-burg.active .line:nth-of-type(3), 
@@ -679,12 +683,12 @@ footer {
     } 
 
     .icon-burg.active .line:nth-of-type(2) {
-    transform: translateY(-4px) rotate(-35deg);
+        transform: translateY(-4px) rotate(-35deg);
     }
 
     body.noscroll {
         overflow: hidden;
-      }
+    }
 
     .nav.burger {
         display: flex;
@@ -696,7 +700,6 @@ footer {
     .nav.burger .nav-items {
         display: block;
         flex-direction: column;
-
         width: 100%;
     }
 
@@ -938,7 +941,6 @@ footer {
 
     .wrap-contacts-img {
         display: flex;
-        
     }
 
     .wrap-contacts-img img {
@@ -963,42 +965,29 @@ footer {
 
 @media screen and (max-width: 379.98px) {
 
-    .container {
+    .container,
+    h1,
+    h2,
+    .wrap-welcome-text, 
+    .wrap-welcome-text p,
+    .wrap-about,
+    .wrap-about-text,
+    .wrap-about-text p,
+    .wrap-service-menu,
+    .wrap-service-items {
         width: 320px;
     }
 
-    h1 {
-        text-align: center;
-        width: 320px;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    .wrap-welcome-text {
-        width: 320px;
-    }
-
-    .wrap-welcome-text p {
-        width: 320px;
-        text-align: center;
-    }
-
+    h1,
+    h2,
+    .wrap-welcome-text p,
     .wrap-about-text p {
-        width: 320px;
         text-align: center;
-    }
-
-    .wrap-service-menu{
-        width: 320px;
     }
 
     .wrap-service-items {
-        width: 320px;
         box-sizing: border-box;
         margin: 0 auto 27px;
     }
-
+   
 } 
-

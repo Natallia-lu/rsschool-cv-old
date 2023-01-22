@@ -11,15 +11,12 @@ function openMenu(event) {
   popup.classList.toggle('open');
   burg.classList.toggle('active');
   body.classList.toggle('noscroll');
-
   menuPopup();
-
 };
 
   function menuPopup() {
   popup.append(menu);
   menu.classList.toggle('burger');
-
 };
   
 links.forEach((link) => {
@@ -31,9 +28,4 @@ function closeMenu() {
   burg.classList.remove('active');
   body.classList.remove('noscroll');
   menu.classList.remove('burger');
-}
-
-
-
-
-
+};
