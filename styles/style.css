@@ -224,6 +224,16 @@ button:hover {
     background-color: #E06733;
 }
 
+.service-btn.active {
+    color: #ffffff;
+    background-color: #E06733;
+}
+
+.service-btn.passive {
+    color: #E06733;
+    background-color: transparent;
+}
+
 .wrap-service-items {
     display: flex;
     flex-flow: row wrap;
@@ -240,6 +250,18 @@ button:hover {
     width: 330px;
     text-align: center;
     margin-bottom: 55px;
+}
+
+
+
+.service-items.blur {
+    transition: 1s;
+    filter: blur(2px);
+}
+
+.service-items.no-blur {
+    transition: 1s;
+    filter: blur(0px);
 }
 
 .service-items img {
@@ -294,9 +316,9 @@ h3 {
     flex-direction: column;
     margin-top: 60px;
     padding: 34px 41px;
-    height: 282px;
     width: 332px;
     justify-content: space-between;
+
 }
 
 .prices-button button {
@@ -321,6 +343,64 @@ h3 {
     background-color: #d5ebd1;
 }
 
+.prices-change.opened {
+    background-color: #d5ebd1;
+}
+
+.prices-items {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    row-gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.prices-item {
+    list-style: none;
+    background-color: #D6E7D2;
+    border-radius: 20px;
+    width: 250px;
+    font-family: 'Inter';
+}
+
+.prices-open {
+    border-top: 0.5px solid #AEA1A1;
+    padding: 6px 40px 12px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.prices-open.opened {
+    display: block;
+}
+
+.prices-open p {
+    font-size: 10px;
+    color: #717171;
+    line-height: 10px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.prices-open p:nth-of-type(2) {
+    font-size: 12px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.prices-open button {
+    color: #717171;
+    background-color: #ffffff;
+    width: 86px;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 3px 20px;
+}
+
 .wrap-prices-right {
     margin: 40px 109px 115px auto;
     text-align: right;
@@ -328,6 +408,7 @@ h3 {
     flex-direction: column;
     align-items: flex-end;
 }
+
 .wrap-prices-right button {
     font-weight: 700;
     margin: 41px 0 39px auto;
@@ -341,6 +422,11 @@ h3 {
 
 .wrap-prices-right a {
     color: #E06733;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
 }
 
 .wrap-prices-right img {
@@ -392,16 +478,136 @@ h3 {
     margin: 35px 10px auto auto;
 }
 
-.btn-city:hover {
-    background-color: #C1E698;
-    color: #717171;
-}
-
 .btn-city img {
     width: 16px;
     height: 16px;
     margin: 0;
 }
+
+.btn-city:hover {
+    background-color: #C1E698;
+    color: #717171;
+}
+
+.btn-city.active {
+    background-color: #C1E698; 
+}
+
+.btn-city.passive {
+    display: none;
+}
+
+.contacts-list {
+    list-style: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 27px 25px 10px 25px;
+    margin: 0 10px auto 370px;
+    font-size: 16px;
+    color: #499A18;
+    font-family: 'Arial';
+    line-height: 40px;
+    display: none;
+}
+
+.contacts-list.active {
+    display: block;
+    background-color: #D6E7D2;
+}
+
+.contacts-list.passive {
+    background-color: transparent;
+}
+
+.contacts-item.passive {
+    display: none;
+    background-color: transparent;
+}
+
+.contacts-item {
+    box-sizing: border-box;
+}
+
+.contacts-item.active {
+    width: 450px;
+    height: 50px;
+    background-color: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0;
+    border: transparent;
+    margin-left: -25px;
+    padding: 7px 25px;
+}
+
+.contacts-item.top {
+    background-color: #C1E698;
+    width: 450px;
+    height: 50px;
+    margin-left: -25px;
+    padding: 7px 25px;
+    color: #717171;
+}
+
+.contacts-item:hover {
+    color: #717171;
+    font-weight: 400;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.contacts-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 448px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+    justify-content: space-between;
+    margin-left: -25px;
+}
+
+.contacts-card button a {
+    display: flex;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.contacts-card.active {
+    display: flex;
+    z-index: 10;
+    margin-top: 40px;
+}
+
+.contacts-card-wrap {
+    display: flex;
+    width: 339px;
+    font-family: 'Inter';
+    margin: 17px 76px auto 33px;
+}
+
+.contacts-card-name p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 40px;
+    width: 130px;
+}
+
+.contacts-card-value p {
+    color: #717171;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.contacts-card button {
+    width: 122px;
+    height: 26px;
+    font-size: 10px;
+    color: #717171;
+    margin: 20px auto 32px;
+}
+
+
 
 footer {
     height: 130px; 
