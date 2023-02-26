@@ -265,6 +265,24 @@ body {
   min-height: 20px;
 }
 
+.wrap-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.wrap-contacts a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrap-contacts a:hover {
+  opacity: .8;
+  cursor: pointer;
+  transition: .3s;
+}
+
 @media (max-width: 768px) {
   .time {
     min-height: 80px;
