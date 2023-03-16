@@ -1,5 +1,5 @@
 # Natallia Lukashenia
-## **Brest, Belarus - Bialystok, Poland
+## **Brest, Belarus - Bialystok, Poland**
 ![Myphoto](/img/my-image.jpg "My photo")
 
 ### **Contacts:**

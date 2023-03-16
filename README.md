@@ -1,1 +1,1 @@
-https://natallia-lu.github.io/rsschool-cv/plants/
+https://Natallia-lu.github.io/rsschool-cv/cv
