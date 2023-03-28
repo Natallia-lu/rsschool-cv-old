@@ -241,6 +241,7 @@ h2 {
 
 .our-friends-item:hover {
     cursor: pointer;
+    background-color: #fff;
 }
 
 .our-friends-item:hover button {
